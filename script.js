@@ -11,11 +11,11 @@ const perguntas = [
             "Isso é maravilhoso!"],
         {
             texto:"Isso é assustador!",
-            afirmação: "Afirmação 1" 
+            afirmação: "No inicio, ficou com medo do que essa tecnologia pode fazer." ,"Acho assustador pensar na velocidade com que a tecnologia está avançando."
         },
         {
             texto:"Isso é maravilhoso!",
-            afirmação: "Afirmação 2"
+            afirmação: "Quis saber como usar IA no seu dia a dia.", "Pensou que IA pode ajudar em tarefas da sua vida."
         }
         ],
     },
@@ -77,12 +77,11 @@ function mostraAlternativas(){
             respostaSelecionada(alternativa)); 
             function respostaSelecionada (opcaoSelecionada){
                 const afirmacoes = opcaoSelecionada.afirmação;
-historiaFinal += afirmacao+ "";
+          historiaFinal += afirmacao+ "";
                 atual++;
                 mostraPergunta();
            
-            }
-        );
+            };
         caixaAlternativas.appendChild(botaoAlternativas);
         }
         function mostraResultado (){
