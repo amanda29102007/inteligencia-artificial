@@ -86,5 +86,15 @@ function mostraAlternativas(){
         }
         function mostraResultado (){
             caixaPerguntas.textContent = "Em 2049 ..."
+            textoResultado. textContent = historiaFinal;
+            caixaAlternativas.textContent = "";
+        }
+        mostraPergunta();
+        
+        const lapis = {
+          tamanho: 20,
+          tipo: 'HB',
+          cor: 'Grafite',
+          temBorrachaAtras: false
         }
 }
