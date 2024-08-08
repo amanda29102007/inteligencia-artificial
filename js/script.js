@@ -1,3 +1,5 @@
+import { aleatorio } from "./aleatorio.js";
+import { perguntas } from "./perguntas.js";
 const caixaPrincipal =  document.querySelector('.caixa-principal');
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
 const caixaAlternativas = document.querySelector('.caixa-alternativas');
@@ -107,8 +109,8 @@ function mostraAlternativas(){
     }
 
         function respostaSelecionada (opcaoSelecionada){
-            const afirmacoes = opcaoSelecionada.afirmacao;
-      historiaFinal += afirmacao+ "";
+            const afirmacoes = aleatorio (opcaoSelecionada.afirmacao);
+      historiaFinal += afirmacao + " ";
             atual++;
             mostraPergunta();
         function mostraResultado (){
@@ -116,8 +118,12 @@ function mostraAlternativas(){
             textoResultado. textContent = historiaFinal;
             caixaAlternativas.textContent = "";
         }
-        mostraPergunta();
         
+        function aleatoria (listas){
+const posicao = Math.floor(Math.random()*lista.length);
+return lista [posicao];        
+}        
+        mostraPergunta();
         const lapis = {
           tamanho: 20,
           tipo: 'HB',
