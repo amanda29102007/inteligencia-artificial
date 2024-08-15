@@ -1,4 +1,4 @@
-import { aleatorio } from "./aleatorio.js";
+import { aleatorio, nome } from "./aleatorio.js";
 import { perguntas } from "./perguntas.js";
 const caixaPrincipal =  document.querySelector('.caixa-principal');
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
@@ -12,13 +12,19 @@ const perguntas = [
         alternativas: [
         {
             texto:"Isso é assustador!",
-            afirmacao: "No inicio, ficou com medo do que essa tecnologia pode fazer."
+            afirmacao: [
+                "No inicio, ficou com medo do que essa tecnologia pode fazer."
+            ],
+            proxima: 1,
         },
         {
             texto:"Isso é maravilhoso!",
-            afirmacao: "Quis saber como usar IA no seu dia a dia."
-        }
-        ],
+            afirmacao: [
+                "Quis saber como usar IA no seu dia a dia."
+            ],
+            proxima: 2,
+        },
+        ]
     },
     {
         enunciado: "Com a descoberta desta tecnologia uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre IA. No fim de uma aula ela pede que Gabriel escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude Gabriel toma?",
@@ -28,12 +34,18 @@ const perguntas = [
     },
            {
             texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.", 
-            afirmacao: "Conseguiu utilizar a IA para buscar informações úteis"
+            afirmacao: [
+                "Conseguiu utilizar a IA para buscar informações úteis"
+            ],
+            proxima: 1,
            },
     {
                texto:"Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-            afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho"
-        }
+            afirmacao: [
+                "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho"
+            ],
+            proxima: 2,
+            },
     ]
 },
     {
@@ -43,22 +55,33 @@ const perguntas = [
             "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores."],
             {
             texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas", 
-            afirmacao: "vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA. "
+            afirmacao: [
+                "vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA. "
+            ],
+            proxima: 1,
             },
             {
             texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-            afirmacao: "Sua motivação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meiois de utilização de IA de forma ética."
-            }
+            afirmacao:[
+            "Sua motivação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meiois de utilização de IA de forma ética."
+            ],
+            proxima: 2,
+        }
         ],
     },
     {
         enunciado: "Ao final da discussão, Gabriel precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
         alternativas:[
            texto: "Criar uma imagem utilizando um gerador de imagem de IA.", 
-           afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também."
-            
+           afirmacao: [
+            "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também."
+           ], 
+           proxima: 1,
            texto:"Criar uma imagem utilizando uma plataforma de design como o Paint."],
-            afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de desing utilizando ferramentas de pintura digital para iniciantes."
+            afirmacao:[
+            "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de desing utilizando ferramentas de pintura digital para iniciantes."
+            ],
+            proxima: 2,
         }
     ]
 },
@@ -125,7 +148,9 @@ function mostraAlternativas(){
         function aleatoria (listas){
 const posicao = Math.floor(Math.random()*lista.length);
 return lista [posicao];        
-}        
+}  
+export const nome = aleatorio(nomes);
+}     
         mostraPergunta();
         const lapis = {
           tamanho: 20,
@@ -140,3 +165,11 @@ function JogarNovamente () {
     caixaResultados.classList.remove("mostrar");
     mostraPerguntan ();
 }
+function substituiNome () {
+    for (pergunta of perguntas){
+        perguntas.enunciado = perguntas.enunciado.replace(/voce/g, nome);
+        
+    }
+}
+substituiNome();
+mostraPergunta();
