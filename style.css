@@ -1,7 +1,7 @@
 :root {
 --cor-de-fundo:#8b978a;
 --cor-principal: #1cbab2;
---cor-secundaria: #19e430;
+--cor-secundaria: #19d3e4;
 --cor-destaque: #2BDEFD;
 --cor-texto: #13d8b7;
 }
@@ -36,7 +36,7 @@ button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }
-.caixa-resultado {
+.caixa-resultados {
     display: nome;
 }
 .caixa-resultado.mostrar {
