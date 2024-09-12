@@ -1,37 +1,37 @@
 export const perguntas = [
     {
-        enunciado: "  Ana foi ao SupeMercado uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Ana foi ao SupeMercado fazer compra após passar uma casa foi suprendida por um homem que queria agredi-la, o que você faria se visse essa situação?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "Chamaria a polícia!",
                 afirmacao: [
-                    "No início ficou com medo do que essa tecnologia pode fazer. "
+                    "Para que pudesse ajudar a Ana, e não correr risco. "
                 ],
                 proxima: 1,
                 },
             {
-                texto: "Isso é maravilhoso!",
+                texto: "Ignorava e continuava a sua caminhada!",
                 afirmacao: [
-                    "Quis saber como usar IA no seu dia a dia."
+                    "Você não risco algum mas Ana sim."
                 ],
                 proxima: 2,
                 }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Em uma praça Eduardo estáva caminhando e viu um homem agredindo um menino, só por que ele queria um doce, esse homem era o pai dele, mas não sabia como dizer não sem usar a violência fiśca?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "Denunciaria o pai da criança.",
                 afirmacao: [
-                    "Conseguiu utilizar a IA para buscar informações úteis."
+                    "Pois nem tudo se resolve com agreção."
                 ],
                 proxima: 3,
                 },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "ignorava.",
                 afirmacao: [
-                    "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                    "Pois não sabemos qual o motivo."
                 ],
                 proxima: 4,
                 }
