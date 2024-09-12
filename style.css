@@ -1,9 +1,9 @@
 :root {
---cor-de-fundo:#20ae14;
---cor-principal: #ba1ca5;
---cor-secundaria: #3746b1;
+--cor-de-fundo:#1a6b13;
+--cor-principal: #1cbab2;
+--cor-secundaria: #19e430;
 --cor-destaque: #2BDEFD;
---cor-texto: #e8e812;
+--cor-texto: #39e812;
 }
 body {
     background-color: var(--cor-de-fundo);
