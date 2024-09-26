@@ -38,38 +38,38 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "Depois que você escreveu o trabalho, teve uma discussão sobre o impacto da IA no trabalho do futuro. O que você faz?",
+        enunciado: "Carla quer terminar seu relacionamentos, mas seu marido continua dentro de sua casa dizendo que não sai  por causa de seus filhos, todo o dia agride ela na frente de seus filhos. O que Carla deve fazer?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Abrir uma denuncia contra ele.",
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                    "Mas no entanto correr risco de vida.",
                 ],
                 proxima: 5,
                 },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "Contratar um seguraça particular.",
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                    "Ela terá mas seguraça ao sair de casa.",
                 ],
                 proxima: 6,
                 }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "João estava em um banco do Sicredi pra fazer uma transfêrencia para conta do hospital que sua mãe estava internada prescisando de uma cirrurgia urgênte, e lá o segurança abordou e agrediu dizendo que ele timha roubado dinheiro. o que João deveria fazer nesse caso?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto: "Entrar na justiça contra o banco, e pedir indenização pelos danos que o segurança cometeu.",
                 afirmacao: [
-                    "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                    "Mas ele gastaria muito mais para o processo, e a cirrurgia da mãe!"
                 ],
                 proxima: 7,
                 },
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Não faria nada.",
                 afirmacao: [
-                    "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                    "Mas ele teria que bancar a conta hospitalar da mesma forma."
                 ],
                 proxima: 8,
                 proxima: 7,
@@ -77,7 +77,7 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "UM idoso de 88 anos foi agência do correio buscar uma emcomenda? ",
         alternativas: [
             {
                 texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
