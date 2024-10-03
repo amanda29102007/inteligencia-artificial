@@ -15,14 +15,14 @@ let perguntaAtual;
 let historiaFinal = "";
 
 botaoIniciar.addEventListener('click',iniciaJogo);
-function iniciaJogo (){
+function iniciaJogo () {
     atual = 0;
     historiaFinal = "";
     telaInicial.style.display = 'none';
     caixaPerguntas.classList.remove("mostrar");
     caixaAlternativas.classList.remove("mostrar");
-    caixaPerguntas.classList.remove("mostrar");
-mostraPergunta();
+    caixaResultados.classList.remove("mostrar");
+    mostraPergunta();  
 }
 
 function mostraPergunta() {
@@ -43,9 +43,9 @@ function mostraAlternativas() {
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
-function mostraAfirmacoes () {
-    for(const afirmacoes of perguntaAtual.afirmacoes) {
-
+function mostraAfirmacoes (){
+    for(const afirmacoes of perguntaAtual.afirmacoes){
+        
     }
 }
 }
@@ -59,7 +59,7 @@ function respostaSelecionada(opcaoSelecionada) {
         mostraResultado();
         return;
     }
-mostraPergunta();
+    mostraPergunta();
 }
 
 function mostraResultado() {
