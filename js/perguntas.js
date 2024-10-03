@@ -19,7 +19,7 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "Em uma praça Eduardo estáva caminhando e viu um homem agredindo um menino, só por que ele queria um doce, esse homem era o pai dele, mas não sabia como dizer não sem usar a violência fiśca?",
+        enunciado: "Em uma praça Eduardo estáva caminhando e viu um homem agredindo um menino, só por que ele queria um doce, esse homem era o pai dele, mas não sabia como dizer não sem usar a violência física?",
         alternativas: [
             {
                 texto: "Denunciaria o pai da criança.",
