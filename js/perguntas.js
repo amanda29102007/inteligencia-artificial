@@ -77,14 +77,14 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "UM idoso de 88 anos foi agência do correio buscar uma emcomenda? ",
+        enunciado: "Um idoso de 88 anos foi em uma agência do correio buscar uma emcomenda, lá um homem o agrediu só por que o idoso olhou para ele, na delêgacia o agressor disse que ele olhou feio e não gostou da quele jesto por isso o agrediu, deixando o idoso muito machucado? ",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "O idoso poderia abrir um boletim de ocorrencia é entrar com processo contra o homem.",
+                afirmacao: "O idoso não gastaria nenhum dinheiro com medicamento mas gastaria para abrir o processo."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "O idoso não faria nada e deixaria tudo quieto.",
                 afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
             },
         ]

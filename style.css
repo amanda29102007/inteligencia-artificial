@@ -39,7 +39,7 @@ button:hover{
 .caixa-resultados {
     display: nome;
 }
-.caixa-resultado.mostrar {
+.caixa-resultados.mostrar {
     display: block;
 }
 .caixa-alternativas {
