@@ -85,7 +85,7 @@ export const perguntas = [
             },
             {
                 texto: "O idoso não faria nada e deixaria tudo quieto.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                afirmacao: "Nas o idoso gastaria com os medicamentos. "
             },
         ]
     },
